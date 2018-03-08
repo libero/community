@@ -14,7 +14,7 @@ In the interests of community involvement and openness, any member of the commun
 
 RFCs should be posted as issues in this repository, or in the repository most relevant to the RFC. You can [find open RFCs for the whole community by searching this repository's issues for RFC](https://github.com/libero/community/issues?q=is%3Aissue+is%3Aopen+rfc)
 
-There is a time limit on RFCs and when a decision has been made following a discussion (on the issue or in person), the issue will be updated and closed. Where appropriate a corresponding architectural decision record may be created.
+There is a time limit on RFCs and when a decision has been made following a discussion (on the issue or in person), the issue will be updated and closed. Where appropriate a corresponding [architectural decision record](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records) may be created.
 
 ## Community Meetings
 The community aims to meet, either in person or online, at least four times per year. The first meeting being in March 2018.
