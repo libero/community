@@ -21,3 +21,6 @@ The community aims to meet, either in person or online, at least four times per 
 
 ## Feedback and Contributing
 If you would like to know more please contact us via email at innovation@elifescieces.org or [raise an issue in this repository](https://github.com/libero/community/issues).
+
+## Support
+This Github organisation is kindly supported as a [non-profit by Github](https://github.com/nonprofit). We also use tools that provide free accounts or features for open source projects from [Travis CI](https://travis-ci.org/) (for continuous integration and continuous delivery) and [BrowserStack](https://www.browserstack.com) (for cross browser testing during development and automated regression testing in production).
