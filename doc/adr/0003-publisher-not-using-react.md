@@ -4,7 +4,7 @@ Date: 2019-10-01
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 Libero Publisher needs a read-optimised, highly performant, progressively enhanced front end.
