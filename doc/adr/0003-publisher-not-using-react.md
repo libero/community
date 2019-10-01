@@ -13,7 +13,7 @@ Libero Publisher needs a read-optimised, highly performant, progressively enhanc
 We will not use the React ecosystem for Libero Publisher.
 
 ## Consequences
-Libero Publisher front end can be light weight.
+Libero Publisher front end can be light weight and will work without JavaScript in the browser.
 
 Libero Publisher will not be able to share pattern template code with Libero Reviewer.
 
