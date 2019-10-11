@@ -15,7 +15,7 @@ Libero Reviewer uses React and JavaScript so the hypothesis was that aligning Li
 ## Decision
 We will not use the React ecosystem for Libero Publisher.
 
-The full decision and more context is given in [this community-accessibly document](https://docs.google.com/document/d/1FkdvBjSb1BH1fhgujtppunvL_NX5U3xVuxv7L0fV010/edit#heading=h.oip2sudw7pju).
+The full decision and more context is given in [this community-accessible document](https://docs.google.com/document/d/1FkdvBjSb1BH1fhgujtppunvL_NX5U3xVuxv7L0fV010/edit#heading=h.oip2sudw7pju).
 
 Further decisions on where the front-end developer experience can be improved through sharing of tools and styles will be documented in subsequent ADRs.
 
