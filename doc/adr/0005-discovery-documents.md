@@ -1,4 +1,4 @@
-# Use Discovery Documents for requirements and technical choices
+# 5. Use Discovery Documents for requirements and technical choices
 
 Date: 2019-10-11
 
