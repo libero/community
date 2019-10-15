@@ -14,5 +14,6 @@ jobs:
     - name: Check ADRs naming convention
       run: |
         set -e
+        cd doc/adr/
         for file in *; do echo $file; [[ $file =~ ^.\+\.md$ ]]; done
 
