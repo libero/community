@@ -17,7 +17,7 @@ Libero product features and architectural choices benefit from the standardizati
 - Move them into the single [`Libero` shared drive](https://drive.google.com/drive/u/1/folders/0AC6f8fXdeXmMUk9PVA).
 - Link them from the relevant Github issue.
 - Establish a timebox in calendar time at the start of the discovery activity.
-- Organize in questions and answers; some of the answers are allowed to be assumption if clearly stated that they are.
+- Capture questions and answers, and document any assumptions that have been made.
 - Link to a [Github milestone](https://github.com/libero/publisher/milestone/20) if applicable.
 - Add a `TL;DR` section at the top before closing the document at the end of the timebox.
 
@@ -25,7 +25,7 @@ Libero product features and architectural choices benefit from the standardizati
 
 A timebox helps limiting analysis time to favor prototyping and actual implementation.
 
-Replenishment meetings are a possibility for choosing the lenght of the timeboxes.
+Replenishment meetings are a possibility for choosing the length of the timeboxes.
 
 Timeboxes are measured in calendar time so they need to take into account the percentage of time that is allocated to other tasks from the people that work on the discovery.
 
