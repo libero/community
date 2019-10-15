@@ -3,14 +3,12 @@ name: CI
 on: [pull_request]
 
 jobs:
-  build:
+  lint:
 
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
     - name: Check ADRs naming convention
       run: |
         set -e
