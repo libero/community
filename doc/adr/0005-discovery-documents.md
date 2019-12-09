@@ -13,8 +13,8 @@ Libero product features and architectural choices benefit from the standardizati
 ## Decisions
 
 - Always track discovery work in at least one dedicated Github issue.
-- Prefix Google Docs discovery documents titles with `Discovery document:`
-- Move them into the single [`Libero` shared drive](https://drive.google.com/drive/u/1/folders/0AC6f8fXdeXmMUk9PVA).
+- If using Google Docs prefix documents titles with `Discovery document:`
+- If using Google Docs move them into the single [`Libero` shared drive](https://drive.google.com/drive/u/1/folders/0AC6f8fXdeXmMUk9PVA).
 - Link them from the relevant Github issue.
 - Establish a timebox in calendar time at the start of the discovery activity.
 - Capture questions and answers, and document any assumptions that have been made.
