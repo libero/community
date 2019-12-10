@@ -4,7 +4,7 @@ Date: 2018-10-09
 
 ## Status
 
-[Superseded](0007-github-actions.md)
+Accepted
 
 ## [Context](https://github.com/libero/community/issues/13)
 
