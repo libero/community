@@ -17,7 +17,7 @@ Libero projects may span a single product or possibly more, but they live in a s
 
 - Name repositories that cover multiple products without prefixes (e.g. `infrastructure`, `community`)
 - Name internal and/or product-specific repositories with prefix for specific product (e.g. `reviewer-submission`, `my-product-storybook`)
-- Name generic repositories with no prefix (e.g. `event-bus`)
+- Name generic repositories with no prefix (e.g. `media-type`)
 - Name forked repositories with the original name, no matter how bad (e.g. [`elifelibero-avada-child-theme`](https://github.com/libero/elifelibero-avada-child-theme), [`texture`](https://github.com/libero/texture))
 - Name Docker images following Github repository names (e.g. [`reviewer-submission`](https://hub.docker.com/r/liberoadmin/reviewer-submission))
 - Name NPM packages using `@libero` followed by Github repository names (e.g. [`@libero/event-bus`](https://www.npmjs.com/package/@libero/event-bus)
