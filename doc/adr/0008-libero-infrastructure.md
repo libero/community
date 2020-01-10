@@ -25,7 +25,7 @@ Libero infrastructure should serve two purposes:
 
 ## Consequences
 
-Vanilla configuration of Libero products should always be running on Libero infrastructure.
+Demo environments for Libero products are run on Libero infrastructure.
 
 Operational aspects that can be added to an environment without changing its architecture (e.g. backups, log aggregation) are considered out of scope for Libero infrastructure.
 
