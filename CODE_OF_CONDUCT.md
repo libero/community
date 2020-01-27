@@ -2,7 +2,7 @@
 The community has elected to adopt the Contributor Convenant in order to foster an open and welcoming environment where contributors can feel safe to make contributions in any way they wish. 
 
 The full text of the code of conduct is below. Instances of abusive, harassing, or otherwise unacceptable behaviour may be
-reported by contacting one of our code of conduct representatives, David Moulton from eLife (d.moulton@elifesciences.org).
+reported by contacting our code of conduct representative, David Moulton from eLife (d.moulton@elifesciences.org).
 
 If you have further questions about this code of conduct please raise an issue on this repository or contact the team on [the Libero Community Slack](https://libero-community.slack.com).
 
