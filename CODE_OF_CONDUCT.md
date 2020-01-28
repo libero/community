@@ -2,7 +2,7 @@
 The community has elected to adopt the Contributor Convenant in order to foster an open and welcoming environment where contributors can feel safe to make contributions in any way they wish. 
 
 The full text of the code of conduct is below. Instances of abusive, harassing, or otherwise unacceptable behaviour may be
-reported by contacting one of our code of conduct representatives, David Moulton from eLife (d.moulton@elifesciences.org) or Girish Nair from Hindawi (girish.nair@hindawi.com).
+reported by contacting our code of conduct representative, David Moulton from eLife (d.moulton@elifesciences.org).
 
 If you have further questions about this code of conduct please raise an issue on this repository or contact the team on [the Libero Community Slack](https://libero-community.slack.com).
 
@@ -63,7 +63,7 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at d.moulton@elifesciences.org or girish.nair@hindawi.com. All
+reported by contacting the project team at d.moulton@elifesciences.org. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.
