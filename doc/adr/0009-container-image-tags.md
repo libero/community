@@ -12,15 +12,17 @@ Libero's products are assembled from product specific, general libero and extern
 
 Integration testing and reproducible deploys require uniquely identifiable image tags.
 
+As a starting point for users earch product has an umbrella repo. This is not only used to collect product issues and documents. I also contains e.g. docker-compose files, helm charts that combine various components to a useable whole.
+
 
 ## Decision
 
 ### Tagging flow
 
 - each container image of a Libero container shall be tagged with the git-sha of the build
-- compose files used for integration test shall use immutable image tags
+- compose files/helm charts used for integration test shall use immutable image tags
 - the compose files will track the component images and external images with the help of PR generating bots (e.g. dependabot, renovate)
-- upon passed integration tests the used libero component images get tagged with the git-sha of the integration/umbrella repo
+- upon passed integration tests the used libero component images get tagged with the git-sha of the umbrella repo
 - semver tagging of Libero component images is triggered by tagging of the umbrelle repo
 
 ### Tag Structure
@@ -39,7 +41,7 @@ Umbrella repo gets version tagged:
 - liberoadmin/reviewer-client:reviewer-1.2
 - liberoadmin/reviewer-client:reviewer-1
 
-The {umbrella-project-name}-{sha|semver} scheme allows components to be reused by other Libero projects e.g. audit:reviewer-1.2.43 and audit:publisher-2.3.54 could refer to same image.
+The {umbrella-product-name}-{sha|semver} scheme allows components to be reused by other Libero projects e.g. audit:reviewer-1.2.43 and audit:publisher-2.3.54 could refer to same image.
 
 For external dependencies the tags should reflect their project's tagging scheme.
 The bot should if possible support updating the pinned digest.
