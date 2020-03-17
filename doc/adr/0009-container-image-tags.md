@@ -31,7 +31,7 @@ Examples:
 
 Example Workflow:
 
-1. head of `libero-reviewer` `master` moves  
+1. head of `libero/reviewer-client` `master` moves  
    the hash is `2d57c085e31cad0c81bd2a7db8dfe28d93aec99b`
    1. new container image gets built
    2. image gets pushed to registry as  
