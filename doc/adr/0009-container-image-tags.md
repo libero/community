@@ -32,6 +32,7 @@ This ADR does not define how the image tags are used for integration tests or de
   - (see example below) 
 - git tags shall consists of the version preceeded by a `v`  
   e.g. `refs/tags/v1.2.43`
+- `master-${full_git_hash}` are the only images also pushed as `latest`
 
 Examples:
 
@@ -47,6 +48,7 @@ Example Workflow:
    2. image gets pushed to registry as  
       `liberoadmin/reviewer-client:master-2d57c085e31cad0c81bd2a7db8dfe28d93aec99b`  
       its short digest is: `dd75d2e1bbfc`
+   3. same image gets tagged and pushed as `latest`
 2. `master` gets tagged as `v1.2.43`
 3. image `dd75d2e1bbfc` receives additional tags
    - `liberoadmin/reviewer-client:1.2.43`
