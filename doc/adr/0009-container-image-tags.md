@@ -62,3 +62,5 @@ This scheme will be rolled out to all Libero products as capacity and roadmap al
 Reviewer will be the first product to implement this and used to validate this proposal.
 
 Libero deploys can track image changes per branch or semver, no longer relying on `latest` for continuous deploys.
+
+Teams are encouraged to adopt automated semver tagging of their repo to ensure compliance with semver. Various tools that utilize _conventional commits_ for this exist.
