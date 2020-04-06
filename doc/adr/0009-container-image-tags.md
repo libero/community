@@ -24,7 +24,8 @@ This ADR does not define how the image tags are used for integration tests or de
 
 ### Tagging 
 
-- libero container images shall always be tagged with ${branch}-${full_git_hash}
+- libero container images shall always be tagged with `${branch}-${full_git_hash}-${timestamp}`
+- `timestamp` format is `%Y%m%d.%H%M`
 - images shall receive semver tags when the git repo receives them
 - semver tagging edits/creates three tags i.e.: 
   - image gets tagged `1.2.43`,  `1.2` and `1`  
@@ -32,12 +33,12 @@ This ADR does not define how the image tags are used for integration tests or de
   - (see example below) 
 - git tags shall consists of the version preceeded by a `v`  
   e.g. `refs/tags/v1.2.43`
-- `master-${full_git_hash}` are the only images also pushed as `latest`
+- `master-${full_git_hash}-${timestamp}` shall be the only images also pushed as `latest`
 
 Examples:
 
-- liberoadmin/reviewer-client:master-${full_git_hash}
-- liberoadmin/reviewer-client:develop-${full_git_hash}
+- liberoadmin/reviewer-client:master-${full_git_hash}-${timestamp}
+- liberoadmin/reviewer-client:develop-${full_git_hash}-${timestamp}
 - liberoadmin/reviewer-client:1.2.43
 
 Example Workflow:
@@ -46,7 +47,7 @@ Example Workflow:
    the hash is `2d57c085e31cad0c81bd2a7db8dfe28d93aec99b`
    1. new container image gets built
    2. image gets pushed to registry as  
-      `liberoadmin/reviewer-client:master-2d57c085e31cad0c81bd2a7db8dfe28d93aec99b`  
+      `liberoadmin/reviewer-client:master-2d57c085e31cad0c81bd2a7db8dfe28d93aec99b-20200512.0834`  
       its short digest is: `dd75d2e1bbfc`
    3. same image gets tagged and pushed as `latest`
 2. `master` gets tagged as `v1.2.43`
@@ -61,6 +62,6 @@ This scheme will be rolled out to all Libero products as capacity and roadmap al
 
 Reviewer will be the first product to implement this and used to validate this proposal.
 
-Libero deploys can track image changes per branch or semver, no longer relying on `latest` for continuous deploys.
+Libero deploys and integration tests can track image changes per branch or semver, no longer relying on `latest` for continuous deploys.
 
 Teams are encouraged to adopt automated [semver](https://semver.org/) tagging of their repo to ensure compliance with semver. Various tools that utilize [conventional commits](https://conventionalcommits.org/) for this exist.
