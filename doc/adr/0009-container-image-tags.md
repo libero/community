@@ -24,7 +24,9 @@ This ADR does not define how the image tags are used for integration tests or de
 
 ### Tagging 
 
-- libero container images shall always be tagged with `${branch}-${full_git_hash}-${timestamp}`
+- libero container images shall __always__ be tagged with both:
+  - `${branch}-${short_git_hash}-${timestamp}`
+  - `${branch}-${short_git_hash}`
 - `timestamp` format is `%Y%m%d.%H%M`
 - images shall receive semver tags when the git repo receives them
 - semver tagging edits/creates three tags i.e.: 
@@ -33,21 +35,26 @@ This ADR does not define how the image tags are used for integration tests or de
   - (see example below) 
 - git tags shall consists of the version preceeded by a `v`  
   e.g. `refs/tags/v1.2.43`
-- `master-${full_git_hash}-${timestamp}` shall be the only images also pushed as `latest`
+- only images from `master` branch shall be pushed as `latest`
 
 Examples:
 
-- liberoadmin/reviewer-client:master-${full_git_hash}-${timestamp}
-- liberoadmin/reviewer-client:develop-${full_git_hash}-${timestamp}
-- liberoadmin/reviewer-client:1.2.43
+```sh
+liberoadmin/reviewer-client:master-${short_git_hash}-${timestamp}
+liberoadmin/reviewer-client:master-${short_git_hash}
+liberoadmin/reviewer-client:develop-${short_git_hash}-${timestamp}
+liberoadmin/reviewer-client:develop-${short_git_hash}
+liberoadmin/reviewer-client:1.2.43
+```
 
 Example Workflow:
 
 1. head of `libero/reviewer-client` `master` moves  
-   the hash is `2d57c085e31cad0c81bd2a7db8dfe28d93aec99b`
+   the hash is `2d57c085`
    1. new container image gets built
    2. image gets pushed to registry as  
-      `liberoadmin/reviewer-client:master-2d57c085e31cad0c81bd2a7db8dfe28d93aec99b-20200512.0834`  
+      `liberoadmin/reviewer-client:master-2d57c085-20200512.0834` __and__  
+      `liberoadmin/reviewer-client:master-2d57c085`  
       its short digest is: `dd75d2e1bbfc`
    3. same image gets tagged and pushed as `latest`
 2. `master` gets tagged as `v1.2.43`
