@@ -14,6 +14,10 @@ Integration testing and reproducible deploys require uniquely identifiable image
 
 As a starting point for users each product has an umbrella repo. This is not only used to collect product issues and documents. I also contains e.g. docker-compose files, helm charts that combine various components to a useable whole.
 
+To automatically update images in these files tools like [dependabot](https://dependabot.com/), [renovate](https://docs.renovatebot.com/docker/) and [flux](https://github.com/fluxcd/flux/). These tools need way to determine which images to update, when to do so and whether human interaction is required. [Semantic Versioning](https://semver.org/) is ideally suited for this, but not all projects/components have/will implement automated semver from the start.
+
+Therefor  this ADR also defines branch name, git hash and timestamp based tags. Branch names let us track specific branches. Hashes allow for unique identification. Timestamps are needed by tools like renovate that require some form of numeric versioning.
+
 Container images always have a digest hash that uniquely identifies their build and is independent from git hashes, git tags and image tags.
 
 The image associated with an image tag is allowed to change. This is useful for tracking semver image tags in deploys, but results in the image digest being required for pinning etc.
